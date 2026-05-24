@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VaultUnlocked - Marketplace de Recursos Digitales</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">VaultUnlocked</div>
+    <nav>
+      <a href="/">Inicio</a>
+      <a href="#" id="nav-login-btn">Iniciar sesión</a>
+      <a href="#" id="nav-register-btn">Registro</a>
+      <a href="#" id="nav-dashboard-btn" style="display:none;">Mi panel</a>
+      <a href="#" id="nav-admin-btn" style="display:none;">Admin</a>
+      <button id="nav-logout-btn" class="link-button" style="display:none;">Cerrar sesión</button>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <h1>Marketplace de recursos digitales gratuitos</h1>
+      <p>Descarga miles de recursos premium sin costo. Mods, plugins, assets y mucho más.</p>
+    </section>
+    <section class="filters-section">
+      <h3>Filtrar por categoría</h3>
+      <div class="category-buttons">
+        <button class="cat-btn active" data-category="all">Todas</button>
+        <button class="cat-btn" data-category="plugins">Plugins</button>
+        <button class="cat-btn" data-category="mods">Mods</button>
+        <button class="cat-btn" data-category="assets">Assets</button>
+        <button class="cat-btn" data-category="scripts">Scripts</button>
+        <button class="cat-btn" data-category="texturas">Texturas</button>
+        <button class="cat-btn" data-category="mapas">Mapas</button>
+        <button class="cat-btn" data-category="utilidades">Utilidades</button>
+      </div>
+    </section>
+    <section class="content-grid" id="resources-list"></section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 VaultUnlocked - Recursos digitales gratuitos | Inspirado en BuiltByBit</p>
+  </footer>
+  <script src="/public/js/app.js"></script>
+</body>
+</html>

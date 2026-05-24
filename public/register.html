@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | VaultUnlocked</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">VaultUnlocked</div>
+    <nav>
+      <a href="/">← Volver</a>
+    </nav>
+  </header>
+  <main class="centered-card">
+    <div class="card">
+      <h2 style="text-align: center; margin-top: 0; background: linear-gradient(135deg, #60a5fa, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Crear cuenta</h2>
+      <form id="register-form">
+        <label style="color: #cbd5e1; margin-top: 1rem; display: block;">Nombre</label>
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <label style="color: #cbd5e1; margin-top: 1rem; display: block;">Email</label>
+        <input type="email" name="email" placeholder="tu@email.com" required>
+        <label style="color: #cbd5e1; margin-top: 1rem; display: block;">Contraseña</label>
+        <input type="password" name="password" placeholder="••••••••" required>
+        <button type="submit" style="width: 100%; margin-top: 1.5rem;">Crear cuenta</button>
+      </form>
+      <p style="text-align: center; color: #cbd5e1; margin-top: 1rem;">¿Ya tienes cuenta? <a href="/login" style="color: #60a5fa; text-decoration: none;">Entrar</a></p>
+      <p id="message" class="message" style="display: none;"></p>
+    </div>
+  </main>
+  <script src="/public/js/auth.js"></script>
+</body>
+</html>
